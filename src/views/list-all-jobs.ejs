@@ -113,10 +113,10 @@
           <img src="<%= job.logo %>" alt="Google">
         </div>
         <div class="job-content">
-          <h3 class="job-title-all"><%= job.job_designation %></h3>
-          <p class="company-name-all"><%= job.company_name %></p>
+          <h3 class="job-title-all"><%= job.jobDesignation %></h3>
+          <p class="company-name-all"><%= job.companyName %></p>
           <div class="job-location-all">
-            <i class="bi bi-geo-alt"></i> <%= job.job_location %>
+            <i class="bi bi-geo-alt"></i> <%= job.jobLocation %>
           </div>
           <div class="job-details">
             <div class="job-detail">
@@ -131,13 +131,13 @@
             <span class="easy-apply-badge">Easy Apply</span>
           </div>
           <div class="skills">
-            <% job.skills_required.forEach(function(skill){ %>
+            <% job.skillRequired.forEach(function(skill){ %>
               <span class="skill"><%= skill %></span>
             <% }); %>
           </div>
           <div class="job-actions">
             <div class="job-posted">
-              <%= job.job_posted %> · 127 applicants
+              <%= job.jobPosted %> · 127 applicants
             </div>
             <div class="action-btns">
               <button class="save-btn">
